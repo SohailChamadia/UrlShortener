@@ -139,4 +139,4 @@ def urlHandler(urltype):
 	resp = Response(data, status=stat, mimetype='application/json')
 	return resp
 
-app.run(port = 5000)
+app.run(port = 8800)
