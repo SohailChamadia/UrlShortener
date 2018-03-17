@@ -29,7 +29,7 @@ def cleaning():
 def index():
         return "UrlShortening"
 
-@app.route('/<string:hashUrl>/',methods = ["POST"])
+@app.route('/<string:hashUrl>/',methods = ["POST","GET"])
 def redirection(hashUrl):
 	if hashUrl == "clean-urls":
 		cleaning()
