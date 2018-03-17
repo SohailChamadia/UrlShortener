@@ -25,6 +25,10 @@ def cleaning():
 		UrlMap.drop_table()
 		UrlMap.create_table()
 
+@app.route('/')
+def index():
+        return "UrlShortening"
+
 @app.route('/<string:hashUrl>/',methods = ["POST"])
 def redirection(hashUrl):
 	if hashUrl == "clean-urls":
