@@ -108,7 +108,7 @@ def urlHandler(urltype):
 			response['status_codes'] = [STATUS_CODES[0]]
 
 	elif urltype == 'count':
-		count = fetchCount(req["short-url"])
+		count = fetchCount(req["short_url"])
 
 		if count:
 			response["count"] = count
