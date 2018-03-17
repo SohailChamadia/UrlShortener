@@ -143,4 +143,4 @@ def urlHandler(urltype):
 	resp = Response(data, status=stat, mimetype='application/json')
 	return resp
 
-app.run()
+app.run(port = 6000)
